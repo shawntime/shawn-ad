@@ -1,0 +1,16 @@
+server:
+  port: 9102
+spring:
+  application:
+    name: ad-eureka-server
+eureka:
+  server:
+    enable-self-preservation: false #关闭自我保护机制
+  instance:
+    hostname: shawntime9102.com
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://shawntime9101.com:9101/eureka,http://shawntime9103.com:9103/eureka
+    register-with-eureka: false #不把自己作为一个客户端注册到自己身上
+    fetch-registry: false
