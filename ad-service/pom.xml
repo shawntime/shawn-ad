@@ -13,7 +13,18 @@
     <name>ad-service</name>
     <modules>
         <module>ad-common</module>
+        <module>ad-sponsor</module>
     </modules>
     <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.shawntime.ad</groupId>
+                <artifactId>ad-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
