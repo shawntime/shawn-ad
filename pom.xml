@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ad-eureka</module>
+        <module>ad-service</module>
     </modules>
     <name>shanw-ad</name>
     <packaging>pom</packaging>
@@ -21,6 +22,7 @@
 
     <properties>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <fastjson.version>1.2.75</fastjson.version>
     </properties>
 
     <dependencies>
@@ -44,6 +46,12 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
